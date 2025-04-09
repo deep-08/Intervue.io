@@ -78,28 +78,28 @@ System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 ## Functionality:
   **Opens https://www.intervue.io/ in Chrome.**
 
-  Clicks the "Login" button on the homepage.
+- Clicks the "Login" button on the homepage.
 
-Switches to the new tab that opens.
+**Switches to the new tab that opens.**
 
-Attempts login with credentials:
-neha@intervue.io / Ps@neha@123
+## Attempts login with credentials:
+    neha@intervue.io / Ps@neha@123
 
-Checks for login failure using:
-//span[@class='ant-alert-description']
-Takes a screenshot if login fails (saved in screenshots/ with a timestamp).
+## Checks for login failure using:
+  //span[@class='ant-alert-description']
+- Takes a screenshot if login fails (saved in screenshots/ with a timestamp).
 
-If login succeeds:
+**If login succeeds:**
 
-Clicks the search placeholder.
+- Clicks the search placeholder.
 
-Enters "hello" in the search field.
+- Enters "hello" in the search field.
 
-Submits the search.
+**Submits the search.**
 
-Clicks a profile header.
+- Clicks a profile header.
 
-Logs out.
+- Logs out.
 
 Closes the browser after execution.
 
