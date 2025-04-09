@@ -67,6 +67,10 @@ Place it in a known location (e.g., C:\drivers\chromedriver.exe on Windows or /u
 Update the script before WebDriver initialization:
 System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 
+## Create Screenshots Folder
+  Create a screenshots directory in the project root to store login failure screenshots:
+  -- mkdir screenshots
+
 
 
 
