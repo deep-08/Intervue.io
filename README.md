@@ -1,3 +1,4 @@
+
 # Intervue Homepage Login and Navigation Test Script
 
 This repository contains a **Selenium-based Java test script** (`LandingHomePage.java`) that automates login testing and subsequent navigation on the Intervue website ([https://www.intervue.io/](https://www.intervue.io/)).  
