@@ -29,8 +29,8 @@ Clone this repository or create a new Maven project:
 
 ## 2.Configure pom.xml
 ### Add the following dependencies to your pom.xml file for Selenium and file handling:
-
-        <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+        
+      <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
       <modelVersion>4.0.0</modelVersion>
       <groupId>SeleniumWebdriver</groupId>
       <artifactId>Intervue</artifactId>
