@@ -22,6 +22,6 @@ Before running the script, ensure you have the following installed:
 
 Clone this repository or create a new Maven project:
 
-# Alternatively, create a new directory and copy the provided LandingHomePage.java into:
+## Alternatively, create a new directory and copy the provided LandingHomePage.java into:
 
 - **src/main/java/intervueHomepage/
