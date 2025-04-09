@@ -64,8 +64,8 @@ Download ChromeDriver from https://chromedriver.chromium.org/ matching your Chro
 
 Place it in a known location (e.g., C:\drivers\chromedriver.exe on Windows or /usr/local/bin/chromedriver on Linux/Mac).
 
-Update the script before WebDriver initialization:
-System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+-Update the script before WebDriver initialization:
+-System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 
 
 
