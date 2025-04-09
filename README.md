@@ -69,7 +69,7 @@ System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 
 ## Create Screenshots Folder
   Create a screenshots directory in the project root to store login failure screenshots:
-  -- mkdir screenshots
+  // mkdir screenshots
 
 
 
