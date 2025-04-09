@@ -56,3 +56,18 @@ Add the following dependencies to your pom.xml file for Selenium and file handli
 
  ## 3.Install Dependencies
   - Run the following command in the project root directory:
+mvn clean install
+
+## 4..Set Up ChromeDriver
+Option 1: Manual Setup
+Download ChromeDriver from https://chromedriver.chromium.org/ matching your Chrome version.
+
+Place it in a known location (e.g., C:\drivers\chromedriver.exe on Windows or /usr/local/bin/chromedriver on Linux/Mac).
+
+Update the script before WebDriver initialization:
+System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+
+
+
+
+
