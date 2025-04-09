@@ -105,7 +105,7 @@ Place it in a known location (e.g., C:\drivers\chromedriver.exe on Windows or /u
 # Execution Instructions
 ## 1. Compile the Project
 
--- mvn compile
+- mvn compile
 
 ## 2. Run the Script
 - Execute using Maven:
