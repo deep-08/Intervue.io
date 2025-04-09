@@ -101,64 +101,57 @@ System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 
 - Logs out.
 
-Closes the browser after execution.
+## Closes the browser after execution.
 
-Execution Instructions
-1. Compile the Project
-bash
-Copy
-Edit
-mvn compile
-2. Run the Script
-Execute using Maven:
+# Execution Instructions
+## 1. Compile the Project
 
-bash
-Copy
-Edit
-mvn exec:java -Dexec.mainClass="intervueHomepage.LandingHomePage"
+# mvn compile
+## 2. Run the Script
+- Execute using Maven:
+
+- mvn exec:java -Dexec.mainClass="intervueHomepage.LandingHomePage"
 Or, run it directly in your IDE by opening LandingHomePage.java and clicking Run.
 
-Expected Output
-Console logs will show:
+## Expected Output
+ Console logs will show:
 
-Switched to new tab: <URL> and New tab title: <title> on successful tab switch.
+- Switched to new tab: <URL> and New tab title: <title> on successful tab switch.
 
-Login failed! Screenshot saved at: <path> if login fails, with a screenshot in the screenshots/ folder.
+- Login failed! Screenshot saved at: <path> if login fails, with a screenshot in the screenshots/ folder.
 
-Login successful! Proceeding to next step... if login succeeds, followed by search and logout actions.
+- Login successful! Proceeding to next step... if login succeeds, followed by search and logout actions.
 
-Error: <message> if an exception occurs (e.g., element not found).
+- Error: <message> if an exception occurs (e.g., element not found).
 
-The browser closes automatically after execution.
+- The browser closes automatically after execution.
 
-Customization
-Login Credentials: Update the email and password in the script if needed:
+# Customization
+- Login Credentials: Update the email and password in the script if needed:
 
-java
-Copy
-Edit
 driver.findElement(By.xpath("//input[@id='login_email']")).sendKeys("your_email");
 driver.findElement(By.xpath("//input[@id='login_password']")).sendKeys("your_password");
-Failure Detection: The current failure check uses //span[@class='ant-alert-description'].
-Verify this matches the error element on the login page after a failed attempt, or update accordingly.
 
-Post-Login Actions: Modify the search term ("hello") or add more steps after logout in the else block.
+## Failure Detection: The current failure check uses //span[@class='ant-alert-description'].
+**Verify this matches the error element on the login page after a failed attempt, or update accordingly.**
 
-Troubleshooting
-NoSuchElementException: Ensure all XPaths match the current webpage structure. Inspect using Chrome DevTools (F12).
+- Post-Login Actions: Modify the search term ("hello") or add more steps after logout in the else block.
 
-Tab Not Switching: Increase Thread.sleep(2000) if the new tab takes longer to open, or replace with WebDriverWait.
+# Troubleshooting
+    NoSuchElementException: Ensure all XPaths match the current webpage structure. Inspect using Chrome DevTools (F12).
 
-Screenshot Not Saving: Confirm the screenshots/ folder exists and is writable.
+- Tab Not Switching: Increase Thread.sleep(2000) if the new tab takes longer to open, or replace with WebDriverWait.
 
-Login Failure Detection Failing: Inspect the page after a failed login to confirm the error element's XPath.
+- Screenshot Not Saving: Confirm the screenshots/ folder exists and is writable.
 
-Notes
-The script uses Thread.sleep() for simplicity. For production use, consider replacing with WebDriverWait for more robust timing.
+- Login Failure Detection Failing: Inspect the page after a failed login to confirm the error element's XPath.
 
-Ensure an active internet connection, as the script interacts with a live website.
+# Notes
+**1. The script uses Thread.sleep() for simplicity. For production use, consider replacing with WebDriverWait for more robust timing.
 
-The browser closes automatically due to driver.quit() in the finally block.
+ - Ensure an active internet connection, as the script interacts with a live website.
+
+- The browser closes automatically due to driver.quit() in the finally block.
 
 
 
