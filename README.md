@@ -24,7 +24,7 @@ Clone this repository or create a new Maven project:
 
 ## Alternatively, create a new directory and copy the provided LandingHomePage.java into:
 
-- **src/main/java/intervueHomepage/
+- src/main/java/intervueHomepage/
 
 ## 2.Configure pom.xml
 Add the following dependencies to your pom.xml file for Selenium and file handling:
