@@ -25,3 +25,34 @@ Clone this repository or create a new Maven project:
 ## Alternatively, create a new directory and copy the provided LandingHomePage.java into:
 
 - **src/main/java/intervueHomepage/
+
+## 2.Configure pom.xml
+Add the following dependencies to your pom.xml file for Selenium and file handling:
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SeleniumWebdriver</groupId>
+  <artifactId>Intervue</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Intervue</name>
+  
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.27.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.5.3</version> <!-- Latest version -->
+</dependency>
+  	
+  </dependencies>
+  
+</project>
+
+ ## 3.Install Dependencies
+  - Run the following command in the project root directory:
