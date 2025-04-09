@@ -17,7 +17,7 @@ Before running the script, ensure you have the following installed:
 
 ---
 
-## Project Setup
+# Project Setup
 
 ### 1. Clone or Create the Project
 
